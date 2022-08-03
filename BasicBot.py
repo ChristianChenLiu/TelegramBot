@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_KEY = os.getenv('API_KEY')
+API_KEY = os.getenv('BASICBOT_API_KEY')
 bot = telebot.TeleBot(API_KEY)
 
 @bot.message_handler(commands=['Pop'])
